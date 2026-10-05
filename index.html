@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Piyush Patanjali Swadeshi Kendra, Karanji</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <strong class="logo">Piyush Patanjali Swadeshi Kendra</strong>
+    <button id="cart-btn" class="cart-btn" onclick="toggleCart(true)">Cart (<span id="cart-count">0</span>)</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Patanjali products, retailer prices.</h1>
+    <p>WhatsApp var order kara. Karanji madhe dukanatun ghya.</p>
+  </div>
+</section>
+
+<main class="wrap">
+  <div id="chips" class="chips"></div>
+  <div id="grid" class="grid"></div>
+</main>
+
+<aside id="cart" class="cart" hidden>
+  <div class="cart-head">
+    <h2>Your cart</h2>
+    <button onclick="toggleCart(false)" aria-label="Close cart">Close</button>
+  </div>
+  <div id="cart-items"></div>
+  <p class="total">Total: <strong id="total">₹0</strong></p>
+  <input id="cust-name" placeholder="Tumche naav">
+  <input id="cust-addr" placeholder="Address / gaav">
+  <button class="order" onclick="checkout()">Order on WhatsApp</button>
+  <button class="clear" onclick="clearCart()">Clear cart</button>
+</aside>
+
+<footer>
+  <p id="f-addr"></p>
+  <p id="f-time"></p>
+  <p>&copy; 2026 Piyush Patanjali Swadeshi Kendra</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
